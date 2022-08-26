@@ -1,0 +1,4 @@
+baseURL = 'http://verma-bipul.github.io/'
+languageCode = 'en-us'
+title = 'Information Set Blog'
+theme = 'the-roots-home'

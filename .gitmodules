@@ -1,0 +1,4 @@
+[submodule "infoset/public"]
+	path = infoset/public
+	url = https://github.com/verma-bipul/verma-bipul.github.io.git
+	branch = main
