@@ -19,6 +19,7 @@ The paste function is used to add strings to a vector of strings by horizontal c
 Example:  
 ```R
 paste(1:12, c("st", "nd", "rd", rep("th", 9)), sep="")
+#> 1st 2nd 3rd ...(so on)
 ```
 
 **typeof(x)**   
@@ -41,5 +42,3 @@ returns a column with True/False values of if the observation is missing or not.
 **nchar(x)**   
 returns the number of charaters in each element of the vector 
 
-----
-- Character vectors are vectors of strings in R.

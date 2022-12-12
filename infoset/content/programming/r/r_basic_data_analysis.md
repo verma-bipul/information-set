@@ -8,22 +8,60 @@ draft: false
 
 ```R
 dataset_name <- read_dta("./family_data.dta")
-df<-read.csv("path")
+df<-read.csv("path", header = T, sep = ",")
 ```
 
+## Saving Dataset 
 
 ## Data Exploration
 
 ```R
-names(family_data) # gives the list of column names present in the dataset 
-head(family_data)  # gives a few starting values of the all column in the dataset
-dim(family_data)   # gives the dimension fo the dataset i.e rows and columns
-str(family_data)   # give the structure of columns in the dataset
+names(data) # gives the list of column names present in the dataset 
+colnames(data)
+head(data)  # gives a few starting values of the all column in the dataset
+dim(data)   # gives the dimension fo the dataset i.e rows and columns
+str(data)   # give the structure of columns in the dataset
 ```
 
 
-## Subsetting in R
+## Select Columns in R
 
 ```R
 subset(df, df$colname = c(a, c)) 
 ```
+This will select columns a and c from the dataset 
+
+
+## Sort Datasets based on Columns
+```R
+df_new<- df[order(df$col1,df$col2), ]
+```
+This will sort the dataset in ascending order based on col1 and col2. For inverse sorting we just need to use the negative sign.
+
+
+## Counting the number of unique values in R
+
+```R
+length(unique(df))
+```
+
+
+## Count NAs
+
+```R
+sum(is.na(vec))
+```
+
+
+## Merging in R
+
+The first thing to note is that there are four standard SQL joins: Inner, Outer, Right, and Left.
+
+```
+merge(df1, df2)  #this will merge based on common columns in the two datasets
+# this is a inner join which keeps only the common elements in the two datasets
+```
+
+## Fuzzy Matching in R
+
+Sometime we would like merge two datasets based on imperfect matching of strings. This is called fuzzy matching.

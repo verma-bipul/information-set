@@ -23,5 +23,17 @@ library(tidyverse)  # to call a package
 
 - tidyverse: This is a package specifically designed for data science.
 - haven: This package allows R to read data from other statistical softwares like SAS, SPSS, Stata. Haven comes as a part of tidyverse
+- stringr: used for string manipulations
+- random: to draw random numbers
+
+
+##  Some useful commands
+
+### Remove objects in R
+```R
+remove(obj_name)
+```
+
+
 
 
