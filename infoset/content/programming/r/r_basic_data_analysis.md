@@ -34,7 +34,7 @@ This will select columns a and c from the dataset
 
 ## Sort Datasets based on Columns
 ```R
-df_new<- df[order(df$col1,df$col2), ]
+df_new <- df[order(df$col1,df$col2), ]
 ```
 This will sort the dataset in ascending order based on col1 and col2. For inverse sorting we just need to use the negative sign.
 
@@ -65,3 +65,4 @@ merge(df1, df2)  #this will merge based on common columns in the two datasets
 ## Fuzzy Matching in R
 
 Sometime we would like merge two datasets based on imperfect matching of strings. This is called fuzzy matching.
+
