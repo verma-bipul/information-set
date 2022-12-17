@@ -58,7 +58,7 @@ sum(is.na(vec))
 The first thing to note is that there are four standard SQL joins: Inner, Outer, Right, and Left.
 
 ```
-merge(df1, df2)  #this will merge based on common columns in the two datasets
+merge(df1, df2, by="col_name")  #this will merge based on common columns in the two datasets
 # this is a inner join which keeps only the common elements in the two datasets
 ```
 
