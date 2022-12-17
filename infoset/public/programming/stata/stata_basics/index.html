@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang=en-us><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Stata Basics - Information Set Blog</title>
+    <meta name="description" content="How to set the working directory in stata? The first thing to do when you start Stata is to set the working directory correctly.
+To set the working directoty use the command:
+cd &#34;&lt;path to file&gt;&#34; cd &#34;E:\dataset&#34; ///for example If the directory path name is long, then one can alternatively define a global variable and call it as and when required.
+global &lt;var_name&gt; &#34;&lt;directory_path_string&gt;&#34; global dataset &#34;E:\dataset&#34; cd &#34;$dataset&#34; How to load dataset in stata?">
+    <link rel="canonical" href="http://verma-bipul.github.io/programming/stata/stata_basics/">
+    <meta property="og:title" content="Stata Basics">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://verma-bipul.github.io/programming/stata/stata_basics/">
+    <meta property="og:description" content="How to set the working directory in stata? The first thing to do when you start Stata is to set the working directory correctly.
+To set the working directoty use the command:
+cd &#34;&lt;path to file&gt;&#34; cd &#34;E:\dataset&#34; ///for example If the directory path name is long, then one can alternatively define a global variable and call it as and when required.
+global &lt;var_name&gt; &#34;&lt;directory_path_string&gt;&#34; global dataset &#34;E:\dataset&#34; cd &#34;$dataset&#34; How to load dataset in stata?">
+    <meta property="og:site_name" content="Information Set Blog">
+    <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
+    <meta name="generator" content="Hugo 0.108.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body><header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/">
+    <span itemprop="name">Index of ~</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/">
+    <span itemprop="name">programming</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/stata/">
+    <span itemprop="name">stata</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item active hidden" aria-current="page"
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/stata/stata_basics/">
+    <span itemprop="name">stata_basics</span>
+  </a>
+  <meta itemprop="position" content="1" />
+</li></ol>
+    </nav>
+    <h1 class="site-title hidden">
+		<a href="http://verma-bipul.github.io/">Information Set Blog</a>
+    </h1>
+</header>
+<main id="content">
+<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">        
+        <h2 class="post-title" itemprop="name headline">Stata Basics</h2>
+        <span class="post-meta">
+            <time class="date-published" datetime="2022-08-29T16:38:46&#43;07:00" itemprop="datePublished">
+                Mon, 29 Aug 2022
+            </time>
+            
+        </span>
+    </header>
+    <div class="post-content" itemprop="articleBody">
+        <h2 id="how-to-set-the-working-directory-in-stata">How to set the working directory in stata?</h2>
+<p>The first thing to do when you start Stata is to set the working directory correctly.</p>
+<p>To set the working directoty use the command:</p>
+<pre tabindex="0"><code class="language-stata" data-lang="stata">cd &#34;&lt;path to file&gt;&#34;
+cd &#34;E:\dataset&#34;    ///for example
+</code></pre><p>If the directory path name is long, then one can alternatively define a global variable and call it as and when required.</p>
+<pre tabindex="0"><code class="language-stata" data-lang="stata">global &lt;var_name&gt; &#34;&lt;directory_path_string&gt;&#34;
+global dataset &#34;E:\dataset&#34;   
+cd &#34;$dataset&#34;
+</code></pre><h2 id="how-to-load-dataset-in-stata">How to load dataset in stata?</h2>
+<p>For this we use the following command.</p>
+<pre tabindex="0"><code class="language-stata" data-lang="stata">use &#34;&lt;path_to_file&gt;&#34;
+use &#34;E:\dataset\cars.dta&#34;
+</code></pre><h2 id="basic-data-exploration-in-stata">Basic data exploration in stata</h2>
+<p>Once the dataset is laoded in  temperory memory one can use the following commands.</p>
+<pre tabindex="0"><code class="language-stata" data-lang="stata">describe // gives the number of obervations and a list of variables   
+
+codebook // gives summary statistics for each of the variable. The execution if this command may be slow if there are a lot of obervation or variables in the dataset.   
+
+sum &lt;variable_name&gt;  // gives the summary statistics for the selected variable
+
+list &lt;var_name&gt;   // also give brief summary stats for the variables
+</code></pre><p>Another useful thing to identify about the dataset is what consititues a unique observation in the dataset.</p>
+<h2 id="helpful-references">Helpful References</h2>
+<p>There are a lot of resources out there to learn stata. Below are links to a few of them which themselves contain further links depending on the specifics.</p>
+<ol>
+<li>
+<a href="https://wlm.userweb.mwn.de/Stata/" target="_blank" rel="nofollow noreferrer noopener">https://wlm.userweb.mwn.de/Stata/</a></li>
+<li>
+<a href="https://www.stata.com/links/resources-for-learning-stata/" target="_blank" rel="nofollow noreferrer noopener">https://www.stata.com/links/resources-for-learning-stata/</a></li>
+</ol>
+
+    </div>
+</article>
+<div class="pagination">
+    
+    
+    <div class="next"> <a href="http://verma-bipul.github.io/programming/stata/gen_vs_egen/">Next Post</a> </div>
+    
+</div>
+
+
+        </main><footer class="site-footer">
+	<span class="left">Gohugo/0.108.0 </span> 
+	<span class="right">
+		<em>Information Set Blog</em>
+	</span>
+</footer>
+</body>
+</html>

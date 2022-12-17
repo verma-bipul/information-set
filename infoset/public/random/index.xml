@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Randoms on Information Set Blog</title>
+    <link>http://verma-bipul.github.io/random/</link>
+    <description>Recent content in Randoms on Information Set Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Dec 2022 06:10:48 -0600</lastBuildDate><atom:link href="http://verma-bipul.github.io/random/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US Geographical Division by Authority</title>
+      <link>http://verma-bipul.github.io/random/us_geo_division/</link>
+      <pubDate>Sat, 03 Dec 2022 06:10:48 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/random/us_geo_division/</guid>
+      <description>Different US authorities divides US into different regions. Here is a list of number of regions that the entire US is divided into by name of authority.
+Table: Total number of divisions by authority1
+Authority Number of regions Region Names US Census Bureau 4 NE; MW; S; W Federal Reserve System 12 see here Time Zones 4 (+2) Eastern; Central; Mountain; Pacific (+Alaska; Hawaii) Federal Court System 13 see here BEA Regions 8 New Eng; ME; SE; Great Lakes; Plains; SW; Rocky Mountains; Far W Petroleum Administration of Defence Districts (PADD) 5 E Coast; W Coast; Gulf Coast; MW; Rocky Mountains Reference: https://www.</description>
+    </item>
+    
+    <item>
+      <title>Quotes</title>
+      <link>http://verma-bipul.github.io/random/quotes/</link>
+      <pubDate>Sat, 29 Oct 2022 10:41:57 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/random/quotes/</guid>
+      <description>“The size of your dreams must always exceed your current capacity to achieve them. If your dreams do not scare you, they are not big enough.” ― Ellen Johnson Sirleaf
+Poor people need more money, not self-help tricks.
+Quotes by Albert Einstein It’s not that I’m so smart, it’s just that I stay with problems longer.
+The only thing more dangerous than ignorance is arrogance.
+Try not to become a man of success but rather a man of value.</description>
+    </item>
+    
+  </channel>
+</rss>

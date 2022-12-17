@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information Set Blog</title>
+    <link>http://verma-bipul.github.io/programming/stata/</link>
+    <description>Recent content on Information Set Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/programming/stata/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Loops</title>
+      <link>http://verma-bipul.github.io/programming/stata/loops/</link>
+      <pubDate>Tue, 13 Dec 2022 10:03:20 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/loops/</guid>
+      <description>For loop in stata Looping through parallel lists local agrp &amp;#34;cat dog cow pig&amp;#34; local bgrp &amp;#34;meow woof moo oinkoink&amp;#34; local n : word count `agrp&amp;#39; forvalues i = 1/`n&amp;#39; { local a : word `i&amp;#39; of `agrp&amp;#39; local b : word `i&amp;#39; of `bgrp&amp;#39; di &amp;#34;`a&amp;#39; says `b&amp;#39;&amp;#34; } /// Output cat says meow dog says woof cow says moo pig says oinkoink References https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/ </description>
+    </item>
+    
+    <item>
+      <title>Data_manupulation_stata</title>
+      <link>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</link>
+      <pubDate>Tue, 30 Aug 2022 20:12:28 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</guid>
+      <description>Data Manipulation in Stata Any data manipulation essentially consists of Row Operations, Column Operations. Data in stata is usually stored in two dimensions - rows and columns. If there are more dimensions to the data then they will simply be stacked together. Data manipulation will most of the times involve construction of new columns based on existing columns.
+TIPS
+The first thing to do is to identify at which level is the data unique.</description>
+    </item>
+    
+    <item>
+      <title>Gen_vs_egen</title>
+      <link>http://verma-bipul.github.io/programming/stata/gen_vs_egen/</link>
+      <pubDate>Tue, 30 Aug 2022 17:32:59 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/gen_vs_egen/</guid>
+      <description>I never understand the difference between the behaviour of gen and egen in stata. I this post I will try to collect resources that clarifies the difference between the two.
+gen vs egen sum The first thing to note is that gen is the simple guy which does what is asked for, however, egen likes to be a ninja - it does different things according to what function is it supplied with.</description>
+    </item>
+    
+    <item>
+      <title>Stata Basics</title>
+      <link>http://verma-bipul.github.io/programming/stata/stata_basics/</link>
+      <pubDate>Mon, 29 Aug 2022 16:38:46 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/stata_basics/</guid>
+      <description>How to set the working directory in stata? The first thing to do when you start Stata is to set the working directory correctly.
+To set the working directoty use the command:
+cd &amp;#34;&amp;lt;path to file&amp;gt;&amp;#34; cd &amp;#34;E:\dataset&amp;#34; ///for example If the directory path name is long, then one can alternatively define a global variable and call it as and when required.
+global &amp;lt;var_name&amp;gt; &amp;#34;&amp;lt;directory_path_string&amp;gt;&amp;#34; global dataset &amp;#34;E:\dataset&amp;#34; cd &amp;#34;$dataset&amp;#34; How to load dataset in stata?</description>
+    </item>
+    
+  </channel>
+</rss>

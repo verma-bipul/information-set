@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang=en-us><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Vim - Information Set Blog</title>
+    <meta name="description" content="Basic Editing with Vim Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard. So here are some basics.
+There are three basic modes: (i) the command mode, (ii) the insert or edit mode, (iii) last line mode. The command mode is basically to browse through the files. This is the mode the file will open as default. In this mode one can&rsquo;t edit the file.">
+    <link rel="canonical" href="http://verma-bipul.github.io/programming/vim/">
+    <meta property="og:title" content="Vim">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://verma-bipul.github.io/programming/vim/">
+    <meta property="og:description" content="Basic Editing with Vim Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard. So here are some basics.
+There are three basic modes: (i) the command mode, (ii) the insert or edit mode, (iii) last line mode. The command mode is basically to browse through the files. This is the mode the file will open as default. In this mode one can&rsquo;t edit the file.">
+    <meta property="og:site_name" content="Information Set Blog">
+    <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
+    <meta name="generator" content="Hugo 0.108.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body><header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/">
+    <span itemprop="name">Index of ~</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/">
+    <span itemprop="name">programming</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item active hidden" aria-current="page"
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/vim/">
+    <span itemprop="name">vim</span>
+  </a>
+  <meta itemprop="position" content="1" />
+</li></ol>
+    </nav>
+    <h1 class="site-title hidden">
+		<a href="http://verma-bipul.github.io/">Information Set Blog</a>
+    </h1>
+</header>
+<main id="content">
+<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">        
+        <h2 class="post-title" itemprop="name headline">Vim</h2>
+        <span class="post-meta">
+            <time class="date-published" datetime="2022-11-16T10:51:27&#43;07:00" itemprop="datePublished">
+                Wed, 16 Nov 2022
+            </time>
+            
+        </span>
+    </header>
+    <div class="post-content" itemprop="articleBody">
+        <h2 id="basic-editing-with-vim">Basic Editing with Vim</h2>
+<p>Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard. So here are some basics.</p>
+<p>There are three basic modes: (i) the command mode, (ii) the insert or edit mode, (iii) last line mode. The command mode is basically to browse through the files. This is the mode the file will open as default. In this mode one can&rsquo;t edit the file. To edit the mode one has to go to the insert mode by pressing the `i&rsquo; key. The last line mode is where we enter the commands to save files or perform other functionalities.</p>
+<h2 id="basic-navigation">Basic Navigation</h2>
+<ul>
+<li>h, j, k, l are used to navigate the pointer left, down,up and right.</li>
+<li>w, b are used to move between words</li>
+<li>0, $ to move between beginning, and end of line</li>
+<li>gg, G to move to beginning, and end of file</li>
+<li>ZZ to save and exit.</li>
+<li>e to move cursor to the end of line</li>
+<li>20G to jumps to line 20 in vim</li>
+</ul>
+<h2 id="scrolling-in-vim">Scrolling in Vim</h2>
+<p>ctrl+d: scroll down  <br>
+ctrl+u: scroll up <br>
+ctrl+f: one page forward <br>
+ctrl+b: one page backward</p>
+<h2 id="insert-mode-positioning">Insert Mode positioning</h2>
+<p>There are several keys to jump to insert mode. The following is a list of keys with their functionality.
+Note: By default everything is typed to the left of cursor.  <br>
+i - will begin the insert mode at the current position of the cursor <br>
+a - will begin the insert mode by placing cursor to one character to the right <br>
+I - append at the beginning of a line       <br>
+A - append at the end of a line</p>
+<h2 id="delete-functionalities">Delete Functionalities:</h2>
+<ul>
+<li>d starts the delete operation. Once we have entered this operation the navigation h,j,k, l will still be operational.</li>
+<li>d followed by the standard line jumping keys will implement delete for those commands. For instance:</li>
+<li>d0, d$, dgg, dG, deletes to the beginning, end</li>
+<li>x  delete character</li>
+</ul>
+<p>Note: The detele functionality is the same as cutting the text. It is temperorily stored in the buffer.</p>
+<h2 id="copy-and-pasting">Copy and pasting</h2>
+<p>The basic idea here is to enter the selection mode using v or V. Once we are in the selection mode, we can use the usual navigation tools to select the desired texts. V will select by line, v by words.
+The letter &lsquo;y&rsquo; which stands for yank copies the selected text to the buffer. To paste the selcted text, just use &lsquo;p&rsquo;. <br>
+To cut and paste in the visual mode one can use &rsquo;d&rsquo; followed by &lsquo;p&rsquo;.</p>
+<h2 id="working-on-multiple-files-using-vim">Working on Multiple files using Vim</h2>
+<h2 id="some-other-useful-commands">Some other useful commands</h2>
+<ul>
+<li>To push vim to the background and return to the terminal we do &lsquo;ctrl+z&rsquo;. To come back we just type &lsquo;fg&rsquo;.</li>
+<li>To display line number we use &lsquo;:set number&rsquo; or &lsquo;:set nu&rsquo; in short.</li>
+</ul>
+<h3 id="split-screen-functionality">Split Screen functionality</h3>
+<ul>
+<li>In order to open multiple files in split screen at the same time use the command  vi -o file1 file2&rsquo;. By default it will open files in a horizontal split.</li>
+<li>To toggle between the horizontal screens we use the &lsquo;ctrl + w&rsquo; followed by j to move down and k to move up to move down and k to move up. The up and down keys works as well.</li>
+<li>Similarly &lsquo;ctrl+ w&rsquo; followed by h, l moves to left and right or one can simply use the cursor keys as well.</li>
+<li>To adujst the size of the splits: &lsquo;ctrl+W&rsquo; + = : equal horizonatal splits.</li>
+</ul>
+<h2 id="plugin-manager-in-vim">Plugin Manager in Vim</h2>
+<p>
+<a href="https://www.linuxhandbook.com/install-vim-plugins/" target="_blank" rel="nofollow noreferrer noopener">www.linuxhandbook.com/install-vim-plugins/</a></p>
+<h2 id="vim-configurations">Vim Configurations</h2>
+<p>Vim configrations are saved in the <code>~/.vimrc</code> configration file.</p>
+<p>One can add the follwing functionalites which will be active from the start.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span> <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">number</span> - <span style="color:#a6e22e">this</span> <span style="color:#a6e22e">displays</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">line</span> <span style="color:#a6e22e">numbers</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="spell-check-in-vim">Spell check in Vim</h2>
+<ul>
+<li>Simply add <code>set spell</code> in the config file.</li>
+<li>[s or ]s are used to navigate between the misspelled words.</li>
+<li>z= will give a list of suggested words.</li>
+</ul>
+<p>References:</p>
+<ol>
+<li>
+<a href="https://www.linuxfoundation.org/blog/blog/classic-sysadmin-vim-101-a-beginners-guide-to-vim" target="_blank" rel="nofollow noreferrer noopener">https://www.linuxfoundation.org/blog/blog/classic-sysadmin-vim-101-a-beginners-guide-to-vim</a></li>
+<li>
+<a href="https://linuxhint.com/vim_split_screen/" target="_blank" rel="nofollow noreferrer noopener">https://linuxhint.com/vim_split_screen/</a>   &ndash; this is regarding split functionalities.</li>
+</ol>
+
+    </div>
+</article>
+<div class="pagination">
+    
+    <div class="prev"> <a href="http://verma-bipul.github.io/programming/creating_website/">Previous Post</a> </div>
+    
+    
+    <div class="next"> <a href="http://verma-bipul.github.io/programming/terminal/">Next Post</a> </div>
+    
+</div>
+
+
+        </main><footer class="site-footer">
+	<span class="left">Gohugo/0.108.0 </span> 
+	<span class="right">
+		<em>Information Set Blog</em>
+	</span>
+</footer>
+</body>
+</html>

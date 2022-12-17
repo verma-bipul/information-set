@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang=en-us><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Gen_vs_egen - Information Set Blog</title>
+    <meta name="description" content="I never understand the difference between the behaviour of gen and egen in stata. I this post I will try to collect resources that clarifies the difference between the two.
+gen vs egen sum The first thing to note is that gen is the simple guy which does what is asked for, however, egen likes to be a ninja - it does different things according to what function is it supplied with.">
+    <link rel="canonical" href="http://verma-bipul.github.io/programming/stata/gen_vs_egen/">
+    <meta property="og:title" content="Gen_vs_egen">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://verma-bipul.github.io/programming/stata/gen_vs_egen/">
+    <meta property="og:description" content="I never understand the difference between the behaviour of gen and egen in stata. I this post I will try to collect resources that clarifies the difference between the two.
+gen vs egen sum The first thing to note is that gen is the simple guy which does what is asked for, however, egen likes to be a ninja - it does different things according to what function is it supplied with.">
+    <meta property="og:site_name" content="Information Set Blog">
+    <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
+    <meta name="generator" content="Hugo 0.108.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body><header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/">
+    <span itemprop="name">Index of ~</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/">
+    <span itemprop="name">programming</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/stata/">
+    <span itemprop="name">stata</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item active hidden" aria-current="page"
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/stata/gen_vs_egen/">
+    <span itemprop="name">gen_vs_egen</span>
+  </a>
+  <meta itemprop="position" content="1" />
+</li></ol>
+    </nav>
+    <h1 class="site-title hidden">
+		<a href="http://verma-bipul.github.io/">Information Set Blog</a>
+    </h1>
+</header>
+<main id="content">
+<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">        
+        <h2 class="post-title" itemprop="name headline">Gen_vs_egen</h2>
+        <span class="post-meta">
+            <time class="date-published" datetime="2022-08-30T17:32:59&#43;07:00" itemprop="datePublished">
+                Tue, 30 Aug 2022
+            </time>
+            
+        </span>
+    </header>
+    <div class="post-content" itemprop="articleBody">
+        <p>I never understand the difference between the behaviour of gen and egen in stata. I this post I will try to collect resources that clarifies the difference between the two.</p>
+<h2 id="gen-vs-egen-sum">gen vs egen sum</h2>
+<p>The first thing to note is that gen is the simple guy which does what is asked for, however, egen likes to be a ninja - it does different things according to what function is it supplied with. egen literally stands for extended generate.</p>
+<pre tabindex="0"><code class="language-stata" data-lang="stata">set obs 10 
+gen a = _n  // generates nos 1:10
+
+egen b = sum(a) //gives the total sum
+gen b = sum(a)  // give the running sum
+</code></pre>
+    </div>
+</article>
+<div class="pagination">
+    
+    <div class="prev"> <a href="http://verma-bipul.github.io/programming/stata/stata_basics/">Previous Post</a> </div>
+    
+    
+    <div class="next"> <a href="http://verma-bipul.github.io/programming/stata/data_manupulation_stata/">Next Post</a> </div>
+    
+</div>
+
+
+        </main><footer class="site-footer">
+	<span class="left">Gohugo/0.108.0 </span> 
+	<span class="right">
+		<em>Information Set Blog</em>
+	</span>
+</footer>
+</body>
+</html>

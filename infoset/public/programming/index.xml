@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information Set Blog</title>
+    <link>http://verma-bipul.github.io/programming/</link>
+    <description>Recent content on Information Set Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terminal</title>
+      <link>http://verma-bipul.github.io/programming/terminal/</link>
+      <pubDate>Sun, 11 Dec 2022 18:01:16 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/terminal/</guid>
+      <description>Some useful terminal commands mkdir dir_name # Make Directory rm -r dir_name # Recursively remove content of a directory mv file1 dir1/ # move file1 to dir1 wget -O dir/file.ext url # download the file from url and save it in dir with filename file.ext wget url -P dir # download the file from url as save it in dir unzip file.zip #to unzip a file touch file_name.ext # create a new file open -a app_name file_name # open file using a specific application Accessing terminal command history Press Ctrl + R to enter the command history mode.</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>http://verma-bipul.github.io/programming/vim/</link>
+      <pubDate>Wed, 16 Nov 2022 10:51:27 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/vim/</guid>
+      <description>Basic Editing with Vim Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard. So here are some basics.
+There are three basic modes: (i) the command mode, (ii) the insert or edit mode, (iii) last line mode. The command mode is basically to browse through the files. This is the mode the file will open as default. In this mode one can&amp;rsquo;t edit the file.</description>
+    </item>
+    
+    <item>
+      <title>Creating Website using Hugo and Github</title>
+      <link>http://verma-bipul.github.io/programming/creating_website/</link>
+      <pubDate>Fri, 26 Aug 2022 08:45:17 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/creating_website/</guid>
+      <description>I was long looking for a hugo theme where I could organize my content in a tree directory structure. I finally found the one that I am currently using.
+The theme is named the-roots-home. The link to its gihub repo is https://github.com/rmsubekti/the-roots-home
+In order to learn how to actually publish contents, I used the tutorial here https://www.youtube.com/watch?v=LIFvgrRxdt4
+To compile and view the site locally run
+hugo server Publishing Contents Once content has been added its time to public them on the internet.</description>
+    </item>
+    
+  </channel>
+</rss>

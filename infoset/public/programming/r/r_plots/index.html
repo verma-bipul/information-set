@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang=en-us><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> R_plots - Information Set Blog</title>
+    <meta name="description" content="R Plots We&rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.
+plot(x_axis_data, y_axis_data, type=&#34;l&#34;, col=&#34;b&#34;, xlab=&#34;label_x&#34;, ylab=&#34;label_y&#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=&#34;TITLE&#34;, sub=&#34;subtile&#34;) GG Plots ">
+    <link rel="canonical" href="http://verma-bipul.github.io/programming/r/r_plots/">
+    <meta property="og:title" content="R_plots">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://verma-bipul.github.io/programming/r/r_plots/">
+    <meta property="og:description" content="R Plots We&rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.
+plot(x_axis_data, y_axis_data, type=&#34;l&#34;, col=&#34;b&#34;, xlab=&#34;label_x&#34;, ylab=&#34;label_y&#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=&#34;TITLE&#34;, sub=&#34;subtile&#34;) GG Plots ">
+    <meta property="og:site_name" content="Information Set Blog">
+    <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
+    <meta name="generator" content="Hugo 0.108.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body><header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/">
+    <span itemprop="name">Index of ~</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/">
+    <span itemprop="name">programming</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/r/">
+    <span itemprop="name">r</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item active hidden" aria-current="page"
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/r/r_plots/">
+    <span itemprop="name">r_plots</span>
+  </a>
+  <meta itemprop="position" content="1" />
+</li></ol>
+    </nav>
+    <h1 class="site-title hidden">
+		<a href="http://verma-bipul.github.io/">Information Set Blog</a>
+    </h1>
+</header>
+<main id="content">
+<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">        
+        <h2 class="post-title" itemprop="name headline">R_plots</h2>
+        <span class="post-meta">
+            <time class="date-published" datetime="2022-12-03T10:40:09&#43;07:00" itemprop="datePublished">
+                Sat, 3 Dec 2022
+            </time>
+            
+        </span>
+    </header>
+    <div class="post-content" itemprop="articleBody">
+        <h3 id="r-plots">R Plots</h3>
+<p>We&rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(x_axis_data, y_axis_data, type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l&#34;</span>, col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;b&#34;</span>,
+</span></span><span style="display:flex;"><span>     xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;label_x&#34;</span>, ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;label_y&#34;</span>, 
+</span></span><span style="display:flex;"><span>     xlim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>), ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-10</span>, <span style="color:#ae81ff">20</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span>(main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;TITLE&#34;</span>, sub<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;subtile&#34;</span>)
+</span></span></code></pre></div><h3 id="gg-plots">GG Plots</h3>
+
+    </div>
+</article>
+<div class="pagination">
+    
+    <div class="prev"> <a href="http://verma-bipul.github.io/programming/r/r_basic_data_analysis/">Previous Post</a> </div>
+    
+    
+    <div class="next"> <a href="http://verma-bipul.github.io/programming/r/string_man/">Next Post</a> </div>
+    
+</div>
+
+
+        </main><footer class="site-footer">
+	<span class="left">Gohugo/0.108.0 </span> 
+	<span class="right">
+		<em>Information Set Blog</em>
+	</span>
+</footer>
+</body>
+</html>

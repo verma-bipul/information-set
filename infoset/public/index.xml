@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information Set Blog</title>
+    <link>http://verma-bipul.github.io/</link>
+    <description>Recent content on Information Set Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Loops</title>
+      <link>http://verma-bipul.github.io/programming/stata/loops/</link>
+      <pubDate>Tue, 13 Dec 2022 10:03:20 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/loops/</guid>
+      <description>For loop in stata Looping through parallel lists local agrp &amp;#34;cat dog cow pig&amp;#34; local bgrp &amp;#34;meow woof moo oinkoink&amp;#34; local n : word count `agrp&amp;#39; forvalues i = 1/`n&amp;#39; { local a : word `i&amp;#39; of `agrp&amp;#39; local b : word `i&amp;#39; of `bgrp&amp;#39; di &amp;#34;`a&amp;#39; says `b&amp;#39;&amp;#34; } /// Output cat says meow dog says woof cow says moo pig says oinkoink References https://www.stata.com/support/faqs/programming/looping-over-parallel-lists/ </description>
+    </item>
+    
+    <item>
+      <title>Apply_fns</title>
+      <link>http://verma-bipul.github.io/programming/r/apply_fns/</link>
+      <pubDate>Sun, 11 Dec 2022 21:18:37 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/apply_fns/</guid>
+      <description> https://www.datasciencemadesimple.com/apply-function-r/
+There are different kinds of apply functions:
+apply mapply sapply apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fun) # Column-wise operation </description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>http://verma-bipul.github.io/programming/terminal/</link>
+      <pubDate>Sun, 11 Dec 2022 18:01:16 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/terminal/</guid>
+      <description>Some useful terminal commands mkdir dir_name # Make Directory rm -r dir_name # Recursively remove content of a directory mv file1 dir1/ # move file1 to dir1 wget -O dir/file.ext url # download the file from url and save it in dir with filename file.ext wget url -P dir # download the file from url as save it in dir unzip file.zip #to unzip a file touch file_name.ext # create a new file open -a app_name file_name # open file using a specific application Accessing terminal command history Press Ctrl + R to enter the command history mode.</description>
+    </item>
+    
+    <item>
+      <title>String_man</title>
+      <link>http://verma-bipul.github.io/programming/r/string_man/</link>
+      <pubDate>Thu, 08 Dec 2022 19:58:22 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/string_man/</guid>
+      <description>String Manipulation in R &amp;gt;paste0(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a1&amp;#34; &amp;#34;a2&amp;#34; &amp;#34;a3&amp;#34; &amp;gt;paste(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a 1&amp;#34; &amp;#34;a 2&amp;#34; &amp;#34;a 3&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>R_plots</title>
+      <link>http://verma-bipul.github.io/programming/r/r_plots/</link>
+      <pubDate>Sat, 03 Dec 2022 10:40:09 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/r_plots/</guid>
+      <description>R Plots We&amp;rsquo;ll start by describing the functioning of the inbuilt R plot function, though there are better packages like ggplot.
+plot(x_axis_data, y_axis_data, type=&amp;#34;l&amp;#34;, col=&amp;#34;b&amp;#34;, xlab=&amp;#34;label_x&amp;#34;, ylab=&amp;#34;label_y&amp;#34;, xlim=c(0, 10), ylim=c(-10, 20)) title(main=&amp;#34;TITLE&amp;#34;, sub=&amp;#34;subtile&amp;#34;) GG Plots </description>
+    </item>
+    
+    <item>
+      <title>US Geographical Division by Authority</title>
+      <link>http://verma-bipul.github.io/random/us_geo_division/</link>
+      <pubDate>Sat, 03 Dec 2022 06:10:48 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/random/us_geo_division/</guid>
+      <description>Different US authorities divides US into different regions. Here is a list of number of regions that the entire US is divided into by name of authority.
+Table: Total number of divisions by authority1
+Authority Number of regions Region Names US Census Bureau 4 NE; MW; S; W Federal Reserve System 12 see here Time Zones 4 (+2) Eastern; Central; Mountain; Pacific (+Alaska; Hawaii) Federal Court System 13 see here BEA Regions 8 New Eng; ME; SE; Great Lakes; Plains; SW; Rocky Mountains; Far W Petroleum Administration of Defence Districts (PADD) 5 E Coast; W Coast; Gulf Coast; MW; Rocky Mountains Reference: https://www.</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>http://verma-bipul.github.io/programming/vim/</link>
+      <pubDate>Wed, 16 Nov 2022 10:51:27 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/vim/</guid>
+      <description>Basic Editing with Vim Vim is a powerful text editor designed in such a manner such that one has to never leave the keyboard. So here are some basics.
+There are three basic modes: (i) the command mode, (ii) the insert or edit mode, (iii) last line mode. The command mode is basically to browse through the files. This is the mode the file will open as default. In this mode one can&amp;rsquo;t edit the file.</description>
+    </item>
+    
+    <item>
+      <title>Quotes</title>
+      <link>http://verma-bipul.github.io/random/quotes/</link>
+      <pubDate>Sat, 29 Oct 2022 10:41:57 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/random/quotes/</guid>
+      <description>“The size of your dreams must always exceed your current capacity to achieve them. If your dreams do not scare you, they are not big enough.” ― Ellen Johnson Sirleaf
+Poor people need more money, not self-help tricks.
+Quotes by Albert Einstein It’s not that I’m so smart, it’s just that I stay with problems longer.
+The only thing more dangerous than ignorance is arrogance.
+Try not to become a man of success but rather a man of value.</description>
+    </item>
+    
+    <item>
+      <title>R_basic_data_analysis</title>
+      <link>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</link>
+      <pubDate>Sun, 04 Sep 2022 17:47:22 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/r_basic_data_analysis/</guid>
+      <description>Loading Dataset dataset_name &amp;lt;- read_dta(&amp;#34;./family_data.dta&amp;#34;) df&amp;lt;-read.csv(&amp;#34;path&amp;#34;, header = T, sep = &amp;#34;,&amp;#34;) Saving Dataset Data Exploration names(data) # gives the list of column names present in the dataset colnames(data) head(data) # gives a few starting values of the all column in the dataset dim(data) # gives the dimension fo the dataset i.e rows and columns str(data) # give the structure of columns in the dataset Select Columns in R subset(df, df$colname = c(a, c)) This will select columns a and c from the dataset</description>
+    </item>
+    
+    <item>
+      <title>R_basics</title>
+      <link>http://verma-bipul.github.io/programming/r/r_basics/</link>
+      <pubDate>Sun, 04 Sep 2022 12:16:42 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/r_basics/</guid>
+      <description>Intro To begin with we first set the working directory of a project. The code to do so is:
+getwd() # This will give the current working directory setwd(&amp;#34;./../dir_path&amp;#34;) # This will set the new working directory. The next important thing is to learn to install and load packages. This can be done as seen in the following demostration.
+install.packages(&amp;#34;tidyverse&amp;#34;) # to install a package library(tidyverse) # to call a package Standard Packages in R tidyverse: This is a package specifically designed for data science.</description>
+    </item>
+    
+    <item>
+      <title>Git_basics</title>
+      <link>http://verma-bipul.github.io/programming/git/git_basics/</link>
+      <pubDate>Wed, 31 Aug 2022 17:17:36 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/git/git_basics/</guid>
+      <description>Basics of Version Control using Git Git is a platform for version control. If there are a large number of people working on a single project then keeping track of who made what changes when and where becomes very important.
+In my experience the best way to learn git it by demostration.
+Getting a copy of repository on local device We don&amp;rsquo;t want to make changes in the original repository which is there in the cloud (or at remote-location), hence we make a clone (or copy) of the repository and save it locally.</description>
+    </item>
+    
+    <item>
+      <title>Data_manupulation_stata</title>
+      <link>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</link>
+      <pubDate>Tue, 30 Aug 2022 20:12:28 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/data_manupulation_stata/</guid>
+      <description>Data Manipulation in Stata Any data manipulation essentially consists of Row Operations, Column Operations. Data in stata is usually stored in two dimensions - rows and columns. If there are more dimensions to the data then they will simply be stacked together. Data manipulation will most of the times involve construction of new columns based on existing columns.
+TIPS
+The first thing to do is to identify at which level is the data unique.</description>
+    </item>
+    
+    <item>
+      <title>Gen_vs_egen</title>
+      <link>http://verma-bipul.github.io/programming/stata/gen_vs_egen/</link>
+      <pubDate>Tue, 30 Aug 2022 17:32:59 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/gen_vs_egen/</guid>
+      <description>I never understand the difference between the behaviour of gen and egen in stata. I this post I will try to collect resources that clarifies the difference between the two.
+gen vs egen sum The first thing to note is that gen is the simple guy which does what is asked for, however, egen likes to be a ninja - it does different things according to what function is it supplied with.</description>
+    </item>
+    
+    <item>
+      <title>Stata Basics</title>
+      <link>http://verma-bipul.github.io/programming/stata/stata_basics/</link>
+      <pubDate>Mon, 29 Aug 2022 16:38:46 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/stata/stata_basics/</guid>
+      <description>How to set the working directory in stata? The first thing to do when you start Stata is to set the working directory correctly.
+To set the working directoty use the command:
+cd &amp;#34;&amp;lt;path to file&amp;gt;&amp;#34; cd &amp;#34;E:\dataset&amp;#34; ///for example If the directory path name is long, then one can alternatively define a global variable and call it as and when required.
+global &amp;lt;var_name&amp;gt; &amp;#34;&amp;lt;directory_path_string&amp;gt;&amp;#34; global dataset &amp;#34;E:\dataset&amp;#34; cd &amp;#34;$dataset&amp;#34; How to load dataset in stata?</description>
+    </item>
+    
+    <item>
+      <title>Creating Website using Hugo and Github</title>
+      <link>http://verma-bipul.github.io/programming/creating_website/</link>
+      <pubDate>Fri, 26 Aug 2022 08:45:17 -0500</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/creating_website/</guid>
+      <description>I was long looking for a hugo theme where I could organize my content in a tree directory structure. I finally found the one that I am currently using.
+The theme is named the-roots-home. The link to its gihub repo is https://github.com/rmsubekti/the-roots-home
+In order to learn how to actually publish contents, I used the tutorial here https://www.youtube.com/watch?v=LIFvgrRxdt4
+To compile and view the site locally run
+hugo server Publishing Contents Once content has been added its time to public them on the internet.</description>
+    </item>
+    
+  </channel>
+</rss>

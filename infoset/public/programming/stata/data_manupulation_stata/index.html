@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang=en-us><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Data_manupulation_stata - Information Set Blog</title>
+    <meta name="description" content="Data Manipulation in Stata Any data manipulation essentially consists of Row Operations, Column Operations. Data in stata is usually stored in two dimensions - rows and columns. If there are more dimensions to the data then they will simply be stacked together. Data manipulation will most of the times involve construction of new columns based on existing columns.
+TIPS
+The first thing to do is to identify at which level is the data unique.">
+    <link rel="canonical" href="http://verma-bipul.github.io/programming/stata/data_manupulation_stata/">
+    <meta property="og:title" content="Data_manupulation_stata">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://verma-bipul.github.io/programming/stata/data_manupulation_stata/">
+    <meta property="og:description" content="Data Manipulation in Stata Any data manipulation essentially consists of Row Operations, Column Operations. Data in stata is usually stored in two dimensions - rows and columns. If there are more dimensions to the data then they will simply be stacked together. Data manipulation will most of the times involve construction of new columns based on existing columns.
+TIPS
+The first thing to do is to identify at which level is the data unique.">
+    <meta property="og:site_name" content="Information Set Blog">
+    <link rel="stylesheet" href="http://verma-bipul.github.io/css/main.min.d8029ac6b4d75a2b3a356c73b20861a6ab0899c888e15fe25c8e0600a0d09c2e.css" integrity="sha256-2AKaxrTXWis6NWxzsghhpqsImciI4V/iXI4GAKDQnC4=">
+    <meta name="generator" content="Hugo 0.108.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body><header class="site-header">
+    <nav class="site-nav" role="navigation" aria-label="breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb"><li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/">
+    <span itemprop="name">Index of ~</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/">
+    <span itemprop="name">programming</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item  " 
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/stata/">
+    <span itemprop="name">stata</span>
+  </a>
+  <meta itemprop="position" content="0" />
+</li>/<li class="breadcrumb-item active hidden" aria-current="page"
+  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <a itemtype="https://schema.org/Thing" itemprop="item" href="http://verma-bipul.github.io/programming/stata/data_manupulation_stata/">
+    <span itemprop="name">data_manupulation_stata</span>
+  </a>
+  <meta itemprop="position" content="1" />
+</li></ol>
+    </nav>
+    <h1 class="site-title hidden">
+		<a href="http://verma-bipul.github.io/">Information Set Blog</a>
+    </h1>
+</header>
+<main id="content">
+<article role="article" class="content post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">        
+        <h2 class="post-title" itemprop="name headline">Data_manupulation_stata</h2>
+        <span class="post-meta">
+            <time class="date-published" datetime="2022-08-30T20:12:28&#43;07:00" itemprop="datePublished">
+                Tue, 30 Aug 2022
+            </time>
+            
+        </span>
+    </header>
+    <div class="post-content" itemprop="articleBody">
+        <h2 id="data-manipulation-in-stata">Data Manipulation in Stata</h2>
+<p>Any data manipulation essentially consists of Row Operations, Column Operations. Data in stata is usually stored in two dimensions - rows and columns. If there are more dimensions to the data then they will simply be stacked together. Data manipulation will most of the times involve construction of new columns based on existing columns.</p>
+<p><strong>TIPS</strong></p>
+<ul>
+<li>The first thing to do is to identify at which level is the data unique.
+-Whenever generating new columns again remind at what level will the new column have unique data.</li>
+<li>Reduce the level of data at which the manupulation is req</li>
+</ul>
+<h2 id="the-collapse-command">The collapse command</h2>
+<p>The collapse command is used to reduce the micro level at which data is presented. For instance if the smallest level at which the data is presented is monthly level, then it can be collapsed to be presented at yearly level.</p>
+<p>The following example is taken from stata tutorials ucla.<br>
+Suppose we have a dataset that looks like the following:</p>
+<pre tabindex="0"><code class="language-stata" data-lang="stata">
+          famid        sex   sexdum1   sexdum2 
+  1.         1          f         1         0  
+  2.         1          m         0         1  
+  3.         1          f         1         0  
+  4.         2          m         0         1  
+  5.         2          m         0         1  
+  6.         2          f         1         0  
+  7.         3          m         0         1  
+  8.         3          f         1         0  
+  9.         3          m         0         1  
+</code></pre><p>Then the collapse command as used below produces the following result.</p>
+<pre tabindex="0"><code class="language-stata" data-lang="stata">collapse (count) numkids=famid (sum) girls=sexdum1 boys=sexdum2, by(famid) 
+
+list famid boys girls numkids 
+
+         famid      boys     girls    numkids 
+  1.         1         1         2          3  
+  2.         2         2         1          3  
+  3.         3         2         1          3   
+</code></pre><p>Here the collapse function tells to count the total number of observation in the familyid variable and store it in numkids, sum the values in sexdum1 and store it in girls, sum values in sexdum2 and store it in boys &mdash; all this will be done at the level of family as specified by the by command.</p>
+
+    </div>
+</article>
+<div class="pagination">
+    
+    <div class="prev"> <a href="http://verma-bipul.github.io/programming/stata/gen_vs_egen/">Previous Post</a> </div>
+    
+    
+    <div class="next"> <a href="http://verma-bipul.github.io/programming/stata/loops/">Next Post</a> </div>
+    
+</div>
+
+
+        </main><footer class="site-footer">
+	<span class="left">Gohugo/0.108.0 </span> 
+	<span class="right">
+		<em>Information Set Blog</em>
+	</span>
+</footer>
+</body>
+</html>
