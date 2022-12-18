@@ -81,13 +81,8 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">unique</span>(df))
 </span></span></code></pre></div><h2 id="count-nas">Count NAs</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">is.na</span>(vec))
-</span></span></code></pre></div><h2 id="merging-in-r">Merging in R</h2>
-<p>The first thing to note is that there are four standard SQL joins: Inner, Outer, Right, and Left.</p>
-<p>Inner Join: This means the merged dataset will have the common elements of the two datasets.</p>
-<pre tabindex="0"><code>merge(df1, df2, by=&#34;col_name&#34;)  #this will merge based on common columns in the two datasets
-# this is a inner join which keeps only the common elements in the two datasets
-</code></pre><h2 id="fuzzy-matching-in-r">Fuzzy Matching in R</h2>
-<p>Sometime we would like merge two datasets based on imperfect matching of strings. This is called fuzzy matching.</p>
+</span></span></code></pre></div><h2 id="fuzzy-matching-in-r">Fuzzy Matching in R</h2>
+<p>Sometimes we would like to merge two datasets based on imperfect matching of strings. This is called fuzzy matching.</p>
 
     </div>
 </article>

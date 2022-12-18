@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2022 09:07:20 -0500</lastBuildDate><atom:link href="http://verma-bipul.github.io/programming/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Merging_in_R</title>
+      <link>http://verma-bipul.github.io/programming/r/merging_in_r/</link>
+      <pubDate>Sat, 17 Dec 2022 16:53:48 -0600</pubDate>
+      
+      <guid>http://verma-bipul.github.io/programming/r/merging_in_r/</guid>
+      <description>Merging in R The first thing to note is that there are four standard SQL joins: Inner, Outer, Right, and Left.
+Inner Join: This means the merged dataset will have the common elements of the two datasets.
+merge(df1, df2, by=&amp;#34;col_name&amp;#34;) #this will merge based on common columns in the two datasets # this is a inner join which keeps only the common elements in the two datasets Outer Join: This joins datasets with elements present in any one of them.</description>
+    </item>
+    
+    <item>
       <title>Apply_fns</title>
       <link>http://verma-bipul.github.io/programming/r/apply_fns/</link>
       <pubDate>Sun, 11 Dec 2022 21:18:37 -0600</pubDate>
@@ -24,7 +35,9 @@ apply mapply sapply apply apply(df, 1, fun) # Row-wise operation apply(df, 2, fu
       <pubDate>Thu, 08 Dec 2022 19:58:22 -0600</pubDate>
       
       <guid>http://verma-bipul.github.io/programming/r/string_man/</guid>
-      <description>String Manipulation in R &amp;gt;paste0(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a1&amp;#34; &amp;#34;a2&amp;#34; &amp;#34;a3&amp;#34; &amp;gt;paste(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a 1&amp;#34; &amp;#34;a 2&amp;#34; &amp;#34;a 3&amp;#34; </description>
+      <description>String Manipulation in R Paste Function The paste function in R is used to join strings together.
+&amp;gt;paste0(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a1&amp;#34; &amp;#34;a2&amp;#34; &amp;#34;a3&amp;#34; &amp;gt;paste(&amp;#34;a&amp;#34;, 1:3) &amp;gt; &amp;#34;a 1&amp;#34; &amp;#34;a 2&amp;#34; &amp;#34;a 3&amp;#34; Sprintf Function The sprintf function prints strings in a specified format. Examples:
+sprintf(&amp;#34;%06d&amp;#34;, 12) # &amp;#34;000012&amp;#34; - 6 digits with leading zeros sprintf(&amp;#34;%.2f&amp;#34;, 15.45678) # &amp;#34;15.49&amp;#34; - prints upto two decimal places </description>
     </item>
     
     <item>
